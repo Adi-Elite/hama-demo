@@ -1,0 +1,13 @@
+body{
+    background-image: url("assets/back.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.main-contain{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

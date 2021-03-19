@@ -1,0 +1,44 @@
+.main-signin{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width:20rem;
+    height: 20rem;
+    float: right;
+    color:rgb(16, 16, 54);
+    box-shadow: 5px 10px gray;
+    border: solid black thin;
+    border-radius: 2rem;
+    align-items: center;
+    background-color: rgba(139, 199, 233, 0.26);
+}
+
+.main-signin input{
+    height: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.main-signin div{
+    font-style: oblique;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.button-signIn{
+    background-color: rgb(63, 63, 224);
+    color: white;
+    width:25%;
+    padding: 0.5rem;
+    outline: none;
+    border:0;
+    font-size: 1rem;
+    border-radius: 1.2rem;
+}
+
+.button-signIn:hover{
+    background-color:rgb(113, 113, 235); 
+    color:white;
+    outline: none;
+}

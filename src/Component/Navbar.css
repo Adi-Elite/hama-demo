@@ -1,0 +1,26 @@
+.nav-contain{
+    display: flex;
+    box-sizing: border-box;
+    padding: 0.8rem;
+    height: 5rem;
+    float: left;
+    width: fit-content;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right,rgb(113, 113, 235),rgb(63, 63, 224));    
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    color:lightblue;
+}
+
+a:hover{
+    color:white;
+    border-radius: 0.5rem;
+    margin-top: 0.2rem;
+}
