@@ -3,7 +3,7 @@ import "./MemberSignIn.css";
 
  export const MemberSignIn = () => {
     return (
-        <div style={{paddingRight:"10rem"}}>
+        <div style={{paddingRight:"2rem"}}>
             <div className="main-signin">
                 <h2>Member Login</h2>
                 <div>
