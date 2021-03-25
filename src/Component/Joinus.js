@@ -1,34 +1,34 @@
 import React, { Component } from 'react';
 import './Joinus.css';
 
-export  class Joinus extends Component {
-    constructor(){
+export class Joinus extends Component {
+    constructor() {
         super();
-        this.state={              
-                HotelName:"",
-                FullName:"",
-                ContactNumber:"",
-                EmailId:"",
-                Address:"",
-                Landmark:"",
-                AuthSign: [
-                    {
-                        DesignantorName:"",
-                        ContactNo:"",
-                        Address:""
-                    }
-                 ]
+        this.state = {
+            HotelName: "",
+            FullName: "",
+            ContactNumber: "",
+            EmailId: "",
+            Address: "",
+            Landmark: "",
+            AuthSign: [
+                {
+                    DesignantorName: "",
+                    ContactNo: "",
+                    Address: ""
                 }
-        
+            ]
+        }
+
     }
 
-    handleFormSubmit =( event) =>{
+    handleFormSubmit = (event) => {
         this.setState({
             [event.target.name]: event.target.value
         })
     }
 
-    
+
     handleAddFieldCount = () => {
         const AuthSign = this.state.AuthSign;
         AuthSign.push({
@@ -64,98 +64,95 @@ export  class Joinus extends Component {
         console.log(this.state);
     };
 
-
-
-    render(){
-        var childs =[];
+    render() {
+        var childs = [];
         for (var i = 0; i < this.state.AuthSign.length; i++) {
             childs.push(
-                <div style={{ paddingTop: "3rem" }}>
-                    <i class="far fa-times-circle" style={{ fontSize: "2rem", float: 'right' }} onClick={this.handleRemoveFieldCount(i)}></i>
-                    <div>
-                        <div style={{ display: "flex" }}>
+                <div style={{ padding: "1rem" }}>
+                    <div className="child-container">
+                 <h2 style={{color:"black",fontSize:"1.25em"}}>
+                        Authorized Designatory:
+                    </h2>
+                        <div >
+                        <i class="far fa-times-circle"
+                            onClick={this.handleRemoveFieldCount(i)}
+                            style={{top:"2rem",right:"16px",position:"absolute",fontSize:"2rem"}}
+                        >  
+                        </i>
+                        </div>                                
                             <div>
                                 Name
                             </div>
-                            <input 
-                                value={this.state.AuthSign[i].name} 
-                                index={i} name="Name" 
-                                onChange={this.assignAuthSignDetails(i)}/>                            
-                                {console.log(this.state)}
+                            <input
+                                value={this.state.AuthSign[i].name}
+                                index={i} name="Name"
+                                onChange={this.assignAuthSignDetails(i)} />
+                            {console.log(this.state)}
                             <div>
                                 Contact No.
                             </div>
-                            <input 
-                                value={this.state.AuthSign[i].ContactNo} 
-                                name="ContactNo" 
-                                onChange={this.assignAuthSignDetails(i)} />
-                            </div>
                             <input
-                                type="text-Area"
-                                value={this.state.AuthSign[i].Address}
-                                name="Address"
-                                placeholder="Address"
-                                onChange={this.assignAuthSignDetails(i)}
-                            />
-                        <div style={{ padding: "1.2rem" }}>
+                                value={this.state.AuthSign[i].ContactNo}
+                                name="ContactNo"
+                                onChange={this.assignAuthSignDetails(i)} />
+                        
                             <div>
+                            Address
+                        </div>
+                        <input
+                            type="text-Area"
+                            value={this.state.AuthSign[i].Address}
+                            name="Address"
+                            placeholder="Address"
+                            style={{ height: "6.5rem" }}
+                            onChange={this.assignAuthSignDetails(i)}
+                        />
+                        <div>
+                            <div style={{padding:"1rem"}}>
                                 Upload Signature:
                             </div>
                             <div>
                                 <input
-                                    style={{
-                                        backgroundColor: "orange",
-                                        width: "80%"
-                                    }}
                                     type="file"
                                 />
                             </div>
-                            <div>
+                            <div style={{padding:"0.5rem"}}>
                                 Upload File:
                             </div>
                             <div>
                                 <input
-                                    style={{
-                                        backgroundColor: "orange",
-                                        width: "80%"
-                                    }}
                                     type='file'
                                 />
                             </div>
-                            <div>
-                            </div>
                         </div>
-                    </div>
-                    <div
-                        style={{
-                            textAlign: "right",
-                            padding: "1.2rem"
-                        }}
-                    >
                     </div>
                 </div>
             );
         }
         return (
-            <div className='joinus-container'>
-                <div> Hotel Name</div>
-                <input type='text' onChange={this.handleFormSubmit} value={this.state.HotelName} name="HotelName"/>
-                <div>Full Name</div>
-                <input type='text' onChange={this.handleFormSubmit} value={this.state.FullName} name='FullName'/>
-                <div>Contact Number</div>
-                <input type='number' onChange={this.handleFormSubmit} value={this.state.ContactNumber} name='ContactNumber'/>               
-                 <div>Email-id</div>
-                 {console.log(this.state)}
-                <input type="mail" onChange={this.handleFormSubmit} value={this.state.EmailId} name='EmailId'/>
-                <div>Address</div>
-                <input type="text-area" placeholder="Address" style={{height:"6.5rem"}}  onChange={this.handleFormSubmit} value={this.state.Address} name='Address'/>
-                <div>Landmark</div>
-                <input type="text"  onChange={this.handleFormSubmit} value={this.state.Landmark} name='Landmark'/>                
-                <h1 style={{ textAlign: "center" }}>
-                        Authorized Designatory:
-                            </h1>
+            <div >
+                <div className='joinus-container'>
+                    <div> Hotel Name</div>
+                    <input type='text' onChange={this.handleFormSubmit} value={this.state.HotelName} name="HotelName" />
+                    <div>Full Name</div>
+                    <input type='text' onChange={this.handleFormSubmit} value={this.state.FullName} name='FullName' />
+                    <div>Contact Number</div>
+                    <input type='number' onChange={this.handleFormSubmit} value={this.state.ContactNumber} name='ContactNumber' />
+                    <div>Email-id</div>
+                    {console.log(this.state)}
+                    <input type="mail" onChange={this.handleFormSubmit} value={this.state.EmailId} name='EmailId' />
+                    <div>Address</div>
+                    <input type="text-area" placeholder="Address" style={{ height: "6.5rem" }} onChange={this.handleFormSubmit} value={this.state.Address} name='Address' />
+                    <div>Landmark</div>
+                    <input type="text" onChange={this.handleFormSubmit} value={this.state.Landmark} name='Landmark' />
+                    <p style={{ paddingTop: "2" }}>
+                        To add info of Authorized designatory click on add.
+                </p>
+                    <button onClick={this.handleAddFieldCount}>+Add</button>
+                </div>
+                <div className='child-holder'>
                     {childs}
-                    <button  onClick={this.handleAddFieldCount}>+Add</button>
+                </div>
             </div>
         )
     }

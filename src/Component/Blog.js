@@ -1,4 +1,9 @@
 import React from 'react';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import hotel1 from '../assets/hotel1.jpg';
+import hotel2 from '../assets/hotel2.jpg';
+import hotel3 from '../assets/hotel3.jpg';
+import { Carousel } from 'react-responsive-carousel';
 import './Blog.css';
 
  export const Blog = () => {
@@ -8,6 +13,26 @@ import './Blog.css';
                 <div>
                     <h1>Hotel Association of Mount Abu</h1>
                     <hr style={{backgroundColor:"orange",height:"0.2rem"}}></hr>
+                    <Carousel showThumbs={false} dynamicHeight={true} infiniteLoop={true}  showStatus={false}  showIndicators={true} showArrows={true}>
+                        <div>
+                            <img  src={hotel1}height="500" alt='1'/>
+                            <p>
+                            Feel free to download, edit and use this template for your websites. 
+                            </p>
+                        </div>
+                        <div>
+                            <img  src={hotel2}  height="500"alt='1'/>
+                            <p>
+                            Credit goes to Public Domain Picutures for the header picture used in this template.
+                            </p>
+                        </div>
+                        <div>
+                            <img src={hotel3} height="500"  alt='1'/>
+                            <p>
+                            Credit goes to Public Domain Picutures for the header picture used in this template.
+                            </p>
+                        </div>
+                    </Carousel>
                     <p>Free Website Templates are provided by TemplateMo. 
                         Feel free to download, edit and use this template for your websites. 
                         Credit goes to Public Domain Picutures for the header picture used in this template.

@@ -2,12 +2,14 @@
     display: flex;
     box-sizing: border-box;
     width:40rem;
+    font-size: 1.2rem;
     height: 25;
+    color: white;
     justify-content: space-around;
     border-radius: 2rem;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(116, 143, 167, 0.315);
+    background-color: rgba(91, 145, 192, 0.774);
     text-align: center;
     margin: 0  auto;
 }
@@ -19,4 +21,63 @@
 }
 .joinus-container div{
     padding: 0.5rem;
+    font-weight: bolder;
 }
+
+.joinus-container button{
+    border-radius: 0.2rem;
+    height: 2rem;
+    width: 5rem;
+    background-color: rgba(148, 148, 187, 0.692);
+    font-weight: bolder;
+    font-size: medium;
+}
+
+.joinus-container h1{
+    color: rgb(6, 1, 12);
+    padding-bottom: 0em;
+}
+
+.child-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 1rem;
+    width:auto;
+    border-radius: 2rem;
+    align-items: center;
+    color: darkblue;
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+    height: auto;
+    flex-direction: column;
+    background-color: rgba(235, 158, 16, 0.603);
+    text-align: center;
+    margin: 0  auto;
+    box-sizing: border-box;
+    background-color: rgba(223, 157, 35, 0.8.22);
+}
+
+.child-holder{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.child-container input{
+    width: 20rem;
+    border-radius: 0.5rem;
+    height: 2rem;    
+}
+
+.child-container div{
+    padding: 0.2rem;
+    font-weight: bolder;
+}
+
+
+
+

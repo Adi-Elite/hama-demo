@@ -1,0 +1,36 @@
+.contact-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:45rem;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    border-radius: 2rem;
+    box-sizing: border-box;
+    flex-direction: column;
+    background-color: rgba(68, 38, 204, 0.507);
+    margin:0 auto;
+}
+
+.contact-main input{
+    width:35rem;
+    border-radius: 0.4rem;
+    height:2rem;
+}
+
+.contact-main div{
+    padding: 1rem;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.contact-main button{
+    border-radius: 0.2rem;
+    height: 2rem;
+    width: 5rem;
+    background-color: rgba(148, 148, 187, 0.692);
+    font-weight: bolder;
+    border-radius: 2rem;
+    font-size: medium;
+}

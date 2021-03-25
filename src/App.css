@@ -6,12 +6,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-  
+    flex-direction: column;  
 }
 
 .main-contain{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  margin: 0;
 }
