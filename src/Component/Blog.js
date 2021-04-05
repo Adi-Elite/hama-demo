@@ -3,6 +3,12 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import hotel1 from '../assets/hotel1.jpg';
 import hotel2 from '../assets/hotel2.jpg';
 import hotel3 from '../assets/hotel3.jpg';
+import hotel4 from '../assets/hotel4.jpg';
+import hotel5 from '../assets/hotel5.jpg';
+import hotel6 from '../assets/hotel6.jpg';
+
+
+
 import { Carousel } from 'react-responsive-carousel';
 import './Blog.css';
 
@@ -17,29 +23,60 @@ import './Blog.css';
                         <div>
                             <img  src={hotel1}height="500" alt='1'/>
                             <p>
-                            Feel free to download, edit and use this template for your websites. 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                             </p>
                         </div>
                         <div>
                             <img  src={hotel2}  height="500"alt='1'/>
                             <p>
-                            Credit goes to Public Domain Picutures for the header picture used in this template.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                             </p>
                         </div>
                         <div>
                             <img src={hotel3} height="500"  alt='1'/>
                             <p>
-                            Credit goes to Public Domain Picutures for the header picture used in this template.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                             printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                        </div>
+                        <div>
+                            <img src={hotel4} height="500"  alt='1'/>
+                            <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                             printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                        </div>
+                        <div>
+                            <img src={hotel5} height="500"  alt='1'/>
+                            <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                             printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                        </div>
+                        <div>
+                            <img src={hotel6} height="500"  alt='1'/>
+                            <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                             printer took a galley of type and scrambled it to make a type specimen book.
                             </p>
                         </div>
                     </Carousel>
-                    <p>Free Website Templates are provided by TemplateMo. 
-                        Feel free to download, edit and use this template for your websites. 
-                        Credit goes to Public Domain Picutures for the header picture used in this template.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Sed et quam vitae ipsum vulputate varius vitae semper nunc.
                         Quisque eget elit quis augue pharetra feugiat. Suspendisse turpis arcu, 
-                        dignissim ac laoreet a, condimentum in massa.</p>
+                        dignissim ac laoreet a, condimentum in massa.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.    
+                    </p>
                     <hr style={{backgroundColor:"orange",height:"0.2rem"}}></hr>
                     <h1>Tours & Travels</h1>
                     <hr style={{backgroundColor:"orange",height:"0.2rem"}}></hr>

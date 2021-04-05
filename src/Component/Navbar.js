@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link, BrowserRouter as Router } from 'react-router-dom';
 import "./Navbar.css";
 
 export const Navbar = () => {
@@ -6,11 +7,10 @@ export const Navbar = () => {
         <div style={{padding:"2rem"}}>
             <div className="nav-contain">
                 <nav className="nav-items">
-                    <a style={{paddingRight:"2rem"}} className="nav-child">Home</a>
-                    <a style={{paddingRight:"2rem"}}>About HAMA</a>
-                    <a style={{paddingRight:"2rem"}}>Activites & Misscallanous</a>
-                    <a style={{paddingRight:"2rem"}}>Publications</a>
-                    <a>Contact Us</a>
+                    <Link style={{paddingRight:"2rem",textDecoration:"none"}} className="nav-child" to="/">Home</Link>
+                    <Link style={{paddingRight:"2rem",textDecoration:"none"}} to="/joinus">Join us</Link>
+                    <Link style={{paddingRight:"2rem",textDecoration:"none"}} to="/docupload">Upload</Link>
+                    <Link style={{paddingRight:"2rem",textDecoration:"none"}}to="/contactus">Contact us</Link>
                 </nav>
             </div>
         </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import './Joinus.css';
 
 export class Joinus extends Component {
@@ -130,7 +131,7 @@ export class Joinus extends Component {
             );
         }
         return (
-            <div >
+          <div >
                 <div className='joinus-container'>
                     <div> Hotel Name</div>
                     <input type='text' onChange={this.handleFormSubmit} value={this.state.HotelName} name="HotelName" />

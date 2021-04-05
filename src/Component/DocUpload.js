@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './DocUpload.css';
 
 export  class DocUpload extends Component {
     render() {
         return (
-            <div className='docupload-main'>
+                <div className='docupload-main'>
                 <h1>File Upload</h1>
                 <div>Add Title</div>
                 <div>
@@ -19,7 +20,7 @@ export  class DocUpload extends Component {
                     Submit
                 </button>
                 </div>
-            </div>  
+            </div> 
         )
     }
 }
